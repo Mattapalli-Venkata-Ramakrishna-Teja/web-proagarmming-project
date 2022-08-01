@@ -1,0 +1,23 @@
+ {% extends 'base.html' %}
+{% block body %}
+<html lang="en">
+<head>
+   <h3> The Expires of your stock are :</h3>
+</head>
+<body>
+   <table border="4" align="center" cellpadding="6" width="500" bordercolor="black">
+      <caption><h2 ><font color="black">Expires:</font></h2></caption>
+      <tr bgcolor="blue" align="center">
+          <td><b> TABLET NAME</b></td>
+          <td><b> COMPANY </b></td>
+      </tr>
+      {% for tab in expires %}
+              <tr bgcolor="lightblue" align="center">
+                  <td><b>{{tab.tabname}}</b></td>
+                  <td><b>{{tab.company}}</b></td>
+              </tr>
+      {% endfor %}
+  </table>
+</body>
+</html>
+ {% endblock %}

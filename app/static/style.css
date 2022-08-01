@@ -1,0 +1,13 @@
+body{
+background : white url("images/medicine.png");
+}
+.jumbotron{
+   background: white url("images/jumbo1.jpeg");
+}
+.jumbotron span{
+   color:black;
+}
+.jumbotron a{
+   color:black;
+}
+

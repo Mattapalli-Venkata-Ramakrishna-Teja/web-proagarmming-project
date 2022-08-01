@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="/update" method="post">
+    <hr/>
+    <em>Tablet-ID</em><input type="text" name="update"/>
+    <hr/>
+    <input type="submit" value="Submit"/>
+</form>
+{% endblock %}

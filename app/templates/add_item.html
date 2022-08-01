@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="/add_item" method="post">
+    <hr/>
+    <em>tabname</em><input type="text" name="tabname"/>
+    <hr/>
+    <hr/>
+    <em>company</em><input type="text" name="company"/>
+    <hr/>
+    <hr/>
+    <em>company</em><input type="date" name="doe"/>
+    <hr/>
+    
+    <input type="submit" value="Submit"/>
+</form>
+{% endblock %}

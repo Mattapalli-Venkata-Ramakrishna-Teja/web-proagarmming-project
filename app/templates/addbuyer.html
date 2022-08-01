@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% if submitted %}
+<br><br><br><br><br>
+<h2 align="center" class="success">Transaction added in database</h2>
+
+{% else %}
+<form action="/addbuyer" method="post">
+    <hr/>
+    <em>NAME: </em><input type="text" name="name"/>
+    <hr/>
+    <hr/>
+    <em>Amount: </em><input type="text" name="amount"/>
+    <hr/>
+
+    <hr/>
+    <em>status of payment : </em><input type="checkbox" name="status"/>
+    <hr/>
+
+    <hr/>
+    <em>company: </em><input type="date" name="date"/>
+    <hr/>
+
+    <input type="submit" value="Submit"/>
+</form>
+{% endif %}
+{% endblock %}

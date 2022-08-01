@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% if submitted %}
+<br><br><br><br><br>
+<h2 align="center" class="success">{{idno}} Item got deleted</h2>
+
+{% else %}
+<form action="/delete" method="post">
+    <hr/>
+    <em>Tablet-ID</em><input type="text" name="delete"/>
+    <hr/>
+    <input type="submit" value="Submit"/>
+</form>
+{% endif %}
+{% endblock %}

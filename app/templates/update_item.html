@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="/update_item" method="post">
+    <hr/>
+    <em>ID</em><input type="text" value="{{item['id']}}" name="id"/>
+    <hr/>
+    <hr/>
+    <em>tabname</em><input type="text" value="{{item['tabname']}}" name="tabname"/>
+    <hr/>
+    <hr/>
+    <em>company</em><input type="text" value="{{item['company']}}" name="company"/>
+    <hr/>
+    <hr/>
+    <em>doe</em><input type="text" value="{{item['doe']}}" name="doe"/>
+    <hr/>
+    
+    <input type="submit" value="Submit"/>
+</form>
+{% endblock %}

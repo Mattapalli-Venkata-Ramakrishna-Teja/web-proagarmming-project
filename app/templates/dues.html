@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+ {% block body %}
+<html lang="en">
+<head>
+   <h3> The persons who should pay to you are :</h3>
+</head>
+<body>
+   <table border="4" align="center" cellpadding="6" width="500" bordercolor="black">
+      <caption><h2 ><font color="black">Payment Dues:</font></h2></caption>
+      <tr bgcolor="blue" align="center">
+          <td><b> Name of customer</b></td>
+          <td><b> Amount to be Paid</b></td>
+      </tr>
+      {% for tran in tran %}
+              <tr bgcolor="lightblue" align="center">
+                  <td><b>{{tran.name}}</b></td>
+                  <td><b>{{tran.amount}}</b></td>
+              </tr>
+      {% endfor %}
+  </table>
+</body>
+</html>
+{% endblock %}
